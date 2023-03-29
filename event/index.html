@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무비 인트로 이벤트 페이지(CGV)</title>
+    <link rel="stylesheet" type="text/css" href="./index.css?v=5">
+    <link rel="stylesheet" type="text/css" href="../default.css?v=4">
+    <link rel="stylesheet" type="text/css" href="../font.css?=4">
+    <script src="./index.js?v=3"></script>
+</head>
+<body>
+<!-- 로고 & 메뉴 -->
+<header class="menu">
+    <nav class="topmenu">
+        <div class="logo">
+            <img src="./image/logo.png" class="logocss" onclick="cgv_real()">
+        </div>
+        <div class="gomenu">
+            <ul>
+                <li title="영화">영화</li>
+                <li title="극장">극장</li>
+                <li title="예매">예매</li>
+                <li title="스토어">스토어</li>
+                <li title="이벤트">이벤트</li>
+                <li title="혜택">혜택</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- 이벤트 참여 파트 부분 및 영상출력 파트 -->
+<section class="event clear">
+    <div class="event_info">
+        <form id="fmm" method="post" action="http://reduck.dothome.co.kr/avt_event.php">
+        <span class="info">
+            <ol>
+                <li>
+                    <img src="./image/avt.png" class="avt_logo">
+                </li>
+                <li><input type="text" placeholder="이벤트 참여자 이름을 입력하세요" name="event_user"></li>
+                <li><input type="text" placeholder="이메일 주소를 입력하세요" name="event_email"></li>
+                <li><input type="text" placeholder="휴대폰 번호를 입력하세요 '-'는 미포함" name="event_tel"></li>
+                <li><input type="text" placeholder="티켓번호를 입력해 주세요" name="event_number" maxlength="8"></li>
+                <li><input type="checkbox" name="event_check" value="yes"> 이용약관에 대한 정보제공 동의함</li>
+                <li><input type="button" value="이벤트 참여하기" onclick="btn()"></li>
+            </ol>
+        </span>
+        </form>
+    </div>
+
+    <video class="ad" muted autoplay loop>
+        <source src="./image/intro.mp4" type="video/mp4">
+    </video>
+    <!-- 카피라이터 -->
+    <footer class="copy">
+        <div class="copyview">
+            <ul>
+                <li title="회사소개">회사소개</li>
+                <li title="IR">IR</li>
+                <li title="채용정보">채용정보</li>
+                <li title="광고/제휴/출점문의">광고/제휴/출점문의</li>
+                <li title="이용약관">이용약관</li>
+                <li title="개인정보처리방침">개인정보처리방침</li>
+                <li title="법적고지">법적고지</li>
+                <li title="이메일수집거부">이메일수집거부</li>
+                <li title="윤리경영">윤리경영</li>
+                <li title="사이버감사실">사이버감사실</li>
+            </ul>
+            <ol>
+                <li>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층</li>
+                <li>대표이사 : 허민회 사업자등록번호 : 104-81-45690 <a href="javascript:corp('1048145690')">[사업자정보확인]</a> 통신판매업신고번호 : 2017-서울용산-0662</li>
+                <li>호스팅사업자 : CJ올리브네트웍스 개인정보보호 책임자 : 윤준승 대표이메일 : <a href="hytuby22@naver.com"><u>hytuby22@naver.com</u></a></li>
+                <li>ⓒ CJ CGV. All Rights Reserved</li>
+            </ol>
+        </div>
+    </footer>
+</section>
+
+
+</body>
+</html>

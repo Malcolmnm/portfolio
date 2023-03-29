@@ -1,0 +1,13 @@
+.ad_box{
+    width: 1200px;
+    height: 140px;
+}
+.ad_box > span{
+    width: 1200px;
+    height: 120px;
+    margin-top: 20px;
+    background-image: url(../banner/middlebanner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}

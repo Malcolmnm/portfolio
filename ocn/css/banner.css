@@ -1,0 +1,78 @@
+.banner_box{
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.banner_ul{
+    height: 500px;
+    cursor: pointer;
+    position: absolute;
+}
+.banner_ul > li{
+    float: left;
+}
+.banner_ul > li:nth-of-type(1){
+    width: 1200px;
+    height: inherit;
+    background-color: blue;
+}
+.banner_ul > li:nth-of-type(2){
+    width: 1200px;
+    height: inherit;
+    background-color: red;
+}
+.banner_ul > li:nth-of-type(3){
+    width: 1200px;
+    height: inherit;
+    background-color: black;
+}
+.banner_ul > li:nth-of-type(4){
+    width: 1200px;
+    height: inherit;
+    background-color: blueviolet;
+}
+.banner_u2{
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    right: 15px;
+}
+.banner_u2 > li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.banner_u2 > li:nth-of-type(1){
+    background-color: white;
+}
+.banner_u2 > li:nth-of-type(4){
+    margin-right: 0px;
+}
+.banner_left{
+    background-image: url(../banner/leftbtn.png);
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top :220px;
+    left: 20px;
+
+}
+
+.banner_right{
+    background-image: url(../banner/rightbtn.png);
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 220px;
+    right: 20px;
+}

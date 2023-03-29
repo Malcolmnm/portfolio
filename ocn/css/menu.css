@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.menu_box1{
+    width: 1200px;
+    height: 120px;
+    position: relative;
+}
+.menu_box2{
+    width: 180px;
+    height: 55px;
+    background-image: url(../images/ocn_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    margin-left: 50%;
+    left: -90px;
+    top: 10px;
+    cursor: pointer;
+}
+.menu_ul{
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 5;
+}
+.menu_ul > li{
+    float: left;
+    width: 240px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.menu_ul > li > ol{
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+    background-color: rgba(255,255,255,0.5);
+}

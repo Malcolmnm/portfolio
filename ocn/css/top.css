@@ -1,0 +1,31 @@
+.box{
+    width: 1200px;
+    height: 35px;
+    position: relative;
+}
+.box1{
+    background-image: url(../images/tving_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80px;
+    height: 35px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box2{
+    float: right;
+    width: auto;
+    height: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 35px;
+}
+.box2 > li{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
